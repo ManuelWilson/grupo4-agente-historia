@@ -1,0 +1,7 @@
+{
+  "dependencies": ["."],
+  "graphs": {
+    "agente_profesor_historia": "./src/agente_profesor/graph.py:graph"
+  },
+  "env": ".env"
+}
