@@ -69,3 +69,7 @@ htmlcov/
 # Artefactos internos de planificación y empaquetado
 verificacion-plan.md
 dist/
+
+# Artefactos del enunciado y del IDE (no se entregan)
+taller_implementacion_agentes.pdf
+*.code-workspace
