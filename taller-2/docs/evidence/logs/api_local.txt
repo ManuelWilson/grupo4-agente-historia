@@ -1,0 +1,11 @@
+POST /v1/chat sin Authorization (esperado 401):
+HTTP/1.1 401 Unauthorized
+content-type: application/json
+x-request-id: e25515eea0b3
+{"detail":"Token inválido o ausente."}
+
+POST /v1/chat con Authorization: Bearer <token> (esperado 200):
+HTTP/1.1 200 OK
+content-type: application/json
+x-request-id: 95f6818dac2e
+{"request_id": "95f6818dac2e", "route": "geografia", "agents": ["geografia"], "task_ids": ["1b82ef73-61bb-51d7-8acb-dc03f77cb22d:01a1e489-78b8-76fb-af21-b38ab3a938c8"]}

@@ -1,0 +1,33 @@
+# Dependencias exactas verificadas para el Taller 2 (Python 3.12.10).
+# Instalar con:  python -m pip install -r requirements.lock
+# Los agentes se instalan aparte, en modo editable:
+#   python -m pip install -e deploy/agents/grupo4-agente-historia \
+#                          -e deploy/agents/grupo4-agente-geografia
+#
+# Este archivo fija las dependencias directas de runtime y pruebas que se usaron
+# para la corrida del 2026-11-16. No reemplaza a los requirements.txt de cada
+# componente: sirve para reproducir el entorno probado sin rangos abiertos.
+
+# --- Gateway ---
+fastapi==0.163.1
+uvicorn==0.54.0
+httpx==0.28.1
+pydantic==2.14.3
+python-dotenv==1.2.4
+
+# --- Agentes (LangChain 1.x / LangGraph) ---
+langchain==1.5.0
+langchain-core==1.8.1
+langchain-google-genai==4.5.0
+langgraph==1.2.22
+langgraph-api==0.18.0
+langgraph-cli[inmem]==0.4.43
+langgraph-sdk==0.4.14
+a2a-sdk==1.3.0
+colorama==0.4.6; sys_platform == "win32"
+
+# --- Pruebas ---
+pytest==9.2.0
+
+# --- Despliegue opcional (+1) ---
+boto3==1.44.3

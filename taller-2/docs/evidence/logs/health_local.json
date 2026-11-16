@@ -1,0 +1,1 @@
+{"ok":true,"service":"gateway","model":"gemini-3.5-flash-lite","llm_enabled":true,"a2a_timeout":45.0,"agents":{"historia":"http://127.0.0.1:2025","geografia":"http://127.0.0.1:2026"},"max_input_chars":2000,"rate_limit_per_minute":6,"rate_limit_per_day":100,"telegram_send_enabled":false,"telegram_allow_all":false,"telegram_allowlist":1}

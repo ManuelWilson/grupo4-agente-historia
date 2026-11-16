@@ -1,0 +1,13 @@
+{
+  "dependencies": ["."],
+  "graphs": {
+    "agente_profesor_geografia": {
+      "path": "./src/agente_geografia/graph.py:graph",
+      "description": "Agente profesor de geografía: describe territorios, relieve, clima e hidrografía, analiza la relación entre sociedad y medio ambiente y propone itinerarios justificados. Consulta su cuaderno de apuntes antes de responder."
+    }
+  },
+  "env": ".env",
+  "http": {
+    "app": "./src/agente_geografia/http_app.py:app"
+  }
+}

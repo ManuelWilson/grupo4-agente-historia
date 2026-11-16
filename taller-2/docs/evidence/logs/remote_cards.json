@@ -1,0 +1,186 @@
+{
+  "historia": {
+    "status": 200,
+    "assistant_id": "7f6f2b12-8dc5-5ce2-a178-2db47369944a",
+    "card": {
+      "name": "agente_profesor_historia",
+      "description": "Agente profesor de historia: explica eventos y procesos, analiza causas y consecuencias, arma cronologías y diseña actividades. Consulta su cuaderno de apuntes antes de responder.",
+      "url": "https://grupo4-agente-historia-d810bfcccd22.herokuapp.com/a2a/7f6f2b12-8dc5-5ce2-a178-2db47369944a",
+      "supportedInterfaces": [
+        {
+          "url": "https://grupo4-agente-historia-d810bfcccd22.herokuapp.com/a2a/7f6f2b12-8dc5-5ce2-a178-2db47369944a",
+          "protocolBinding": "JSONRPC",
+          "protocolVersion": "1.0"
+        }
+      ],
+      "capabilities": {
+        "streaming": true,
+        "pushNotifications": false,
+        "stateTransitionHistory": false,
+        "extensions": [
+          {
+            "uri": "https://langchain.com/a2a/extensions/history-scope/v1",
+            "description": "Choose task-only or full-context response history",
+            "required": false,
+            "params": {
+              "header": "LangGraph-A2A-History-Scope",
+              "values": [
+                "context",
+                "task"
+              ],
+              "default": "context",
+              "methods": [
+                "SendMessage",
+                "GetTask",
+                "ListTasks"
+              ]
+            }
+          }
+        ]
+      },
+      "defaultInputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "defaultOutputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "skills": [
+        {
+          "id": "7f6f2b12-8dc5-5ce2-a178-2db47369944a-main",
+          "name": "agente_profesor_historia Capabilities",
+          "description": "Agente profesor de historia: explica eventos y procesos, analiza causas y consecuencias, arma cronologías y diseña actividades. Consulta su cuaderno de apuntes antes de responder.",
+          "tags": [
+            "assistant",
+            "langgraph"
+          ],
+          "examples": [],
+          "inputModes": [
+            "application/json",
+            "text/plain"
+          ],
+          "outputModes": [
+            "application/json",
+            "text/plain"
+          ],
+          "metadata": {
+            "inputSchema": {
+              "required": [
+                "messages"
+              ],
+              "properties": [
+                "messages"
+              ],
+              "supportsA2A": true
+            }
+          }
+        }
+      ],
+      "version": "0.18.0",
+      "securitySchemes": {
+        "bearer": {
+          "type": "http",
+          "scheme": "bearer"
+        }
+      },
+      "security": [
+        {
+          "bearer": []
+        }
+      ]
+    }
+  },
+  "geografia": {
+    "status": 200,
+    "assistant_id": "bed88ad6-7b48-5518-a206-cb2d85c69cda",
+    "card": {
+      "name": "agente_profesor_geografia",
+      "description": "Agente profesor de geografía: describe territorios, relieve, clima e hidrografía, analiza la relación entre sociedad y medio ambiente y propone itinerarios justificados. Consulta su cuaderno de apuntes antes de responder.",
+      "url": "https://grupo4-agente-geografia-df1b26d2ed18.herokuapp.com/a2a/bed88ad6-7b48-5518-a206-cb2d85c69cda",
+      "supportedInterfaces": [
+        {
+          "url": "https://grupo4-agente-geografia-df1b26d2ed18.herokuapp.com/a2a/bed88ad6-7b48-5518-a206-cb2d85c69cda",
+          "protocolBinding": "JSONRPC",
+          "protocolVersion": "1.0"
+        }
+      ],
+      "capabilities": {
+        "streaming": true,
+        "pushNotifications": false,
+        "stateTransitionHistory": false,
+        "extensions": [
+          {
+            "uri": "https://langchain.com/a2a/extensions/history-scope/v1",
+            "description": "Choose task-only or full-context response history",
+            "required": false,
+            "params": {
+              "header": "LangGraph-A2A-History-Scope",
+              "values": [
+                "context",
+                "task"
+              ],
+              "default": "context",
+              "methods": [
+                "SendMessage",
+                "GetTask",
+                "ListTasks"
+              ]
+            }
+          }
+        ]
+      },
+      "defaultInputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "defaultOutputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "skills": [
+        {
+          "id": "bed88ad6-7b48-5518-a206-cb2d85c69cda-main",
+          "name": "agente_profesor_geografia Capabilities",
+          "description": "Agente profesor de geografía: describe territorios, relieve, clima e hidrografía, analiza la relación entre sociedad y medio ambiente y propone itinerarios justificados. Consulta su cuaderno de apuntes antes de responder.",
+          "tags": [
+            "assistant",
+            "langgraph"
+          ],
+          "examples": [],
+          "inputModes": [
+            "application/json",
+            "text/plain"
+          ],
+          "outputModes": [
+            "application/json",
+            "text/plain"
+          ],
+          "metadata": {
+            "inputSchema": {
+              "required": [
+                "messages"
+              ],
+              "properties": [
+                "messages"
+              ],
+              "supportsA2A": true
+            }
+          }
+        }
+      ],
+      "version": "0.18.0",
+      "securitySchemes": {
+        "bearer": {
+          "type": "http",
+          "scheme": "bearer"
+        }
+      },
+      "security": [
+        {
+          "bearer": []
+        }
+      ]
+    }
+  }
+}

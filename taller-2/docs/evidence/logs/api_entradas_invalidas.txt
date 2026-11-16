@@ -1,0 +1,2 @@
+mensaje vacío -> HTTP 422 (esperado 422)
+mensaje de 2700 caracteres -> HTTP 422 (esperado 422)

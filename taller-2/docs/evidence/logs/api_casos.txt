@@ -1,0 +1,5 @@
+datos_faltantes | HTTP 200 | route=historia | agents=historia | task_ids=1 | chars=1434 | request_id=32cfd4508684
+fuera_de_alcance | HTTP 200 | route=generica | agents= | task_ids=0 | chars=154 | request_id=a84184100601
+geografia | HTTP 200 | route=geografia | agents=geografia | task_ids=1 | chars=3528 | request_id=819938da32a7
+historia | HTTP 200 | route=historia | agents=historia | task_ids=1 | chars=3650 | request_id=599acdf4615e
+mixta | HTTP 200 | route=mixta | agents=historia,geografia | task_ids=2 | chars=7994 | request_id=24544e6f2f5b

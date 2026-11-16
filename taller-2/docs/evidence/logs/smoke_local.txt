@@ -1,0 +1,12 @@
+[OK   ] historia: http://127.0.0.1:2025/ok -> HTTP 200
+[OK   ] historia: card.url=http://127.0.0.1:2025/a2a/7f6f2b12-8dc5-5ce2-a178-2db47369944a
+[OK   ] historia: interfaces=['http://127.0.0.1:2025/a2a/7f6f2b12-8dc5-5ce2-a178-2db47369944a']
+[OK   ] geografia: http://127.0.0.1:2026/ok -> HTTP 200
+[OK   ] geografia: card.url=http://127.0.0.1:2026/a2a/bed88ad6-7b48-5518-a206-cb2d85c69cda
+[OK   ] geografia: interfaces=['http://127.0.0.1:2026/a2a/bed88ad6-7b48-5518-a206-cb2d85c69cda']
+[OK   ] gateway: http://127.0.0.1:8000/health -> HTTP 200
+[OK   ] gateway: /v1/chat sin token -> HTTP 401 (esperado 401)
+[OK   ] gateway: /v1/chat con token -> HTTP 200, route=historia
+       respuesta: La Ilustraci├│n fue un movimiento cultural e intelectual europeo del siglo XVIII que, confiando en la raz├│n y la ciencia frente al dogmatismo, impuls├│ la cr├¡tica al Antiguo R├®gimen 
+
+Resultado: todo OK.

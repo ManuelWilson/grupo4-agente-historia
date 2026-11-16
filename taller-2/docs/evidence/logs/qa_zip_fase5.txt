@@ -1,0 +1,70 @@
+== QA FINAL DE LA ENTREGA (ZIP) - 2026-11-16 ==
+Entorno: Windows, Python 3.12.10, venv NUEVO creado desde cero.
+Carpeta: <TEMP>\taller2-qa-fase5 (fuera del repo; no se entrega).
+ZIP probado: dist/taller2-entrega.zip
+
+Este archivo no fija un SHA256 propio: un ZIP no puede contener su propio hash.
+El hash del ZIP final lo imprime `package_delivery.ps1` al empaquetar y queda en
+`dist/taller2-entrega.sha256.txt`. La corrida de QA se hizo sobre el build de
+134 entradas (SHA256 CC49E2B7...); al agregar esta evidencia y reempaquetar, el
+ZIP final gana una entrada y cambia de hash, con el mismo contenido funcional.
+
+1) Instalacion siguiendo el README
+   py -3.12 -m venv .venv
+   python -m pip install -r requirements.lock
+   python -m pip install -e deploy/agents/grupo4-agente-historia -e deploy/agents/grupo4-agente-geografia
+   -> OK. Python 3.12.10; fastapi 0.163.1; langgraph-api 0.18.0.
+   -> El .env de QA se creo desde .env.example y no forma parte del ZIP.
+
+2) Arranque 1: agentes 2025/2026 + gateway 8000
+   GET /health -> 200
+   {"ok":true,"service":"gateway","model":"gemini-3.5-flash-lite","llm_enabled":true,
+    "a2a_timeout":45.0,"agents":{"historia":"http://127.0.0.1:2025",
+    "geografia":"http://127.0.0.1:2026"},"a2a_auth_enabled":true,
+    "telegram_send_enabled":false,"telegram_allow_all":true}
+
+   check_agents.py --historia http://127.0.0.1:2025 --geografia http://127.0.0.1:2026
+   [OK] historia: /ok -> 200
+   [OK] historia: card.url=http://127.0.0.1:2025/a2a/7f6f2b12-...
+   [OK] historia: sin token -> 401 (esperado 401)
+   [OK] historia: consulta A2A -> state=completed, 247 chars
+   [OK] geografia: /ok -> 200
+   [OK] geografia: card.url=http://127.0.0.1:2026/a2a/bed88ad6-...
+   [OK] geografia: sin token -> 401 (esperado 401)
+   [OK] geografia: consulta A2A -> state=completed, 225 chars
+   Resultado: agentes OK (/ok + card + consulta A2A). exit=0
+
+   smoke_local.py --chat
+   [OK] historia: /ok -> 200
+   [OK] historia: card.url=http://127.0.0.1:2025/a2a/...
+   [OK] geografia: /ok -> 200
+   [OK] geografia: card.url=http://127.0.0.1:2026/a2a/...
+   [OK] gateway: /health -> 200
+   [OK] gateway: /v1/chat sin token -> 401 (esperado 401)
+   [OK] gateway: /v1/chat con token -> 200, route=historia
+   Resultado: todo OK. exit=0
+
+   pytest deploy/tests -q
+   -> 143 passed in 12.54s (incluye integracion A2A real con los agentes arriba).
+
+3) Arranque 2 (reinicio): se detuvieron los tres procesos y se volvieron a levantar
+   smoke_local.py --chat
+   [OK] historia: /ok -> 200
+   [OK] historia: card.url=http://127.0.0.1:2025/a2a/...
+   [OK] geografia: /ok -> 200
+   [OK] geografia: card.url=http://127.0.0.1:2026/a2a/...
+   [OK] gateway: /health -> 200
+   [OK] gateway: /v1/chat sin token -> 401 (esperado 401)
+   [OK] gateway: /v1/chat con token -> 200, route=historia
+   Resultado: todo OK. exit=0
+
+4) Auditoria del ZIP final reempaquetado (con esta evidencia incluida)
+   - check_no_secrets.py sobre el ZIP descomprimido: OK (sin secretos, .env ni rutas).
+   - Sin chat_id real, sin token A2A, sin .env dentro del ZIP.
+   - README.md, requirements.lock, .python-version y esta evidencia presentes.
+   - pytest deploy/tests -q sobre el ZIP extraido: 143 passed.
+   - check_agents.py sobre el ZIP extraido: agentes OK (401/200 + tarea completed).
+
+Conclusion: el ZIP se instala y arranca en una carpeta distinta siguiendo el README,
+responde una consulta real, protege /v1/chat y /a2a/*, y soporta un reinicio completo.
+No se imprimieron secretos ni el chat_id en esta evidencia.

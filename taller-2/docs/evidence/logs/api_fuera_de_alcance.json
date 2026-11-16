@@ -1,0 +1,11 @@
+{
+  "caso": "fuera_de_alcance",
+  "solicitud": "Resuelve esta integral: x^2 dx",
+  "http": 200,
+  "route": "generica",
+  "agents": [],
+  "task_ids": [],
+  "chars": 154,
+  "reply": "Este chat es para consultas de historia y geografía, y esa no parece ser de ninguno de los dos temas. ¿Querés preguntarme algo de historia o de geografía?",
+  "request_id": "a84184100601"
+}

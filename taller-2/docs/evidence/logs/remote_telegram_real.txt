@@ -1,0 +1,9 @@
+== REMOTE (Telegram real) - 2026-11-16 14:27:17 UTC ==
+Bot: @history_teacher_taller_bot (chat id guardado fuera del repositorio)
+Pregunta enviada desde Telegram Web:
+  "¿Cuál fue la causa principal de la Revolución Francesa? Respondé en dos frases."
+
+CloudWatch /aws/lambda/gateway-telegram (lineas reales):
+  {"ts": "2026-11-16T14:26:51.765+00:00", "level": "INFO", "logger": "gateway.service", "event": "consulta", "request_id": "", "update_id": "837466093", "chat_id_hash": "bb6a94472c0e", "route": "historia", "agents": "historia", "a2a_task_id": "c0e8f2b3-1b73-5690-aa57-7d9104d322d0:01a1e4c0-e5f1-764c-886c-9778c7c4bd0e", "status": "ok", "error_code": "", "chars": 407, "latency_ms": 2420, "reason": "palabras clave: revolucion francesa"} 
+  {"ts": "2026-11-16T14:26:52.183+00:00", "level": "INFO", "logger": "gateway.lambda_handler", "event": "telegram_enviado", "request_id": "", "update_id": "837466093", "chat_id_hash": "bb6a94472c0e", "route": "historia", "status": "ok", "mensajes": 1, "chars": 407} 
+  REPORT RequestId: 3afdef50-6bee-4aa8-b8bc-806814b348a6	Duration: 2841.01 ms	Billed Duration: 2842 ms	Memory Size: 512 MB	Max Memory Used: 140 MB	 

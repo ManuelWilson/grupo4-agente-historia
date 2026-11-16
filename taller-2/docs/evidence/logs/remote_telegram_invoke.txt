@@ -1,0 +1,15 @@
+== REMOTE (AWS Lambda + Telegram) - 2026-11-16 11:25:46 local ==
+Function URL: https://4fnvq6jlgay2it2asa2w5pj2ji0xxxob.lambda-url.us-east-1.on.aws
+Webhook configurado: https://4fnvq6jlgay2it2asa2w5pj2ji0xxxob.lambda-url.us-east-1.on.aws/telegram
+Lambda timeout: 120s   estado: Active/Successful
+
+POST /telegram  (X-Telegram-Bot-Api-Secret-Token: <TELEGRAM_SECRET>)
+  -> 200 OK
+  x-amzn-requestid: a3332c7a-ddf1-49e5-bd4c-771087e19242
+  body: OK
+
+CloudWatch /aws/lambda/gateway-telegram (extracto):
+  {"ts": "2026-11-16T14:25:32.780+00:00", "level": "INFO", "logger": "gateway.service", "event": "clasificacion", "request_id": "", "update_id": "839131417", "chat_id_hash": "bb6a94472c0e", "route": "historia", "method": "keywords", "reason": "palabras clave: revolucion francesa"} 
+  {"ts": "2026-11-16T14:25:35.050+00:00", "level": "INFO", "logger": "gateway.service", "event": "consulta", "request_id": "", "update_id": "839131417", "chat_id_hash": "bb6a94472c0e", "route": "historia", "agents": "historia", "a2a_task_id": "c0e8f2b3-1b73-5690-aa57-7d9104d322d0:01a1e4bf-baf2-76a2-bf73-86ee0df6ba09", "status": "ok", "error_code": "", "chars": 474, "latency_ms": 2270, "reason": "palabras clave: revolucion francesa"} 
+  {"ts": "2026-11-16T14:25:35.447+00:00", "level": "INFO", "logger": "gateway.lambda_handler", "event": "telegram_enviado", "request_id": "", "update_id": "839131417", "chat_id_hash": "bb6a94472c0e", "route": "historia", "status": "ok", "mensajes": 1, "chars": 474} 
+  REPORT RequestId: a3332c7a-ddf1-49e5-bd4c-771087e19242	Duration: 2669.57 ms	Billed Duration: 2670 ms	Memory Size: 512 MB	Max Memory Used: 138 MB	 
