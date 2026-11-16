@@ -1,0 +1,39 @@
+{
+  "service": "gateway-telegram",
+  "region": "us-east-1",
+  "image": "421572135000.dkr.ecr.us-east-1.amazonaws.com/gateway-lambda:fase4-20261116",
+  "package_type": "Image",
+  "runtime": null,
+  "timeout_seconds": 120,
+  "memory_mb": 512,
+  "architectures": [
+    "x86_64"
+  ],
+  "state": "Active",
+  "last_update_status": "Successful",
+  "last_modified": "2026-11-16T13:47:44.000+0000",
+  "function_url": "https://4fnvq6jlgay2it2asa2w5pj2ji0xxxob.lambda-url.us-east-1.on.aws/",
+  "environment_keys": [
+    "A2A_GEOGRAFIA_ASSISTANT_ID",
+    "A2A_GEOGRAFIA_URL",
+    "A2A_HISTORIA_ASSISTANT_ID",
+    "A2A_HISTORIA_URL",
+    "A2A_SHARED_TOKEN",
+    "A2A_TIMEOUT_SECONDS",
+    "GOOGLE_API_KEY",
+    "LOG_FORMAT",
+    "LOG_LEVEL",
+    "MODELO",
+    "TELEGRAM_ALLOWED_CHAT_IDS",
+    "TELEGRAM_ALLOW_ALL",
+    "TELEGRAM_SECRET",
+    "TELEGRAM_SEND_ENABLED",
+    "TELEGRAM_TOKEN"
+  ],
+  "a2a_shared_token_set": true,
+  "a2a_timeout_seconds": "45",
+  "telegram_allow_all": "false",
+  "telegram_allowlist_count": 1,
+  "telegram_send_enabled": "true",
+  "log_format": "json"
+}

@@ -1,0 +1,13 @@
+{
+  "dependencies": ["."],
+  "graphs": {
+    "agente_profesor_historia": {
+      "path": "./src/agente_profesor/graph.py:graph",
+      "description": "Agente profesor de historia: explica eventos y procesos, analiza causas y consecuencias, arma cronologías y diseña actividades. Consulta su cuaderno de apuntes antes de responder."
+    }
+  },
+  "env": ".env",
+  "http": {
+    "app": "./src/agente_profesor/http_app.py:app"
+  }
+}

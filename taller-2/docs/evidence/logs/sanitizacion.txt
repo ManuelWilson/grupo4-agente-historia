@@ -1,0 +1,4 @@
+sin rutas absolutas: a2a-test.ipynb
+sin rutas absolutas: a2a-test.run.log
+sin rutas absolutas: a2a-test.ipynb
+sin rutas absolutas: a2a-test.run.log

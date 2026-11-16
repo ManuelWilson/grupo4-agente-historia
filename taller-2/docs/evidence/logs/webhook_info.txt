@@ -1,0 +1,2 @@
+getWebhookInfo: 200
+{'ok': True, 'result': {'url': 'https://4fnvq6jlgay2it2asa2w5pj2ji0xxxob.lambda-url.us-east-1.on.aws/telegram', 'has_custom_certificate': False, 'pending_update_count': 0, 'max_connections': 40, 'ip_address': '100.57.143.67', 'allowed_updates': ['message'], 'last_synchronization_error_date': 1794779963}}

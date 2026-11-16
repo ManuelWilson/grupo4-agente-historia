@@ -1,0 +1,14 @@
+[OK   ] historia: GET http://127.0.0.1:2025/ok -> HTTP 200
+[OK   ] historia: card.url=http://127.0.0.1:2025/a2a/7f6f2b12-8dc5-5ce2-a178-2db47369944a
+[OK   ] historia: interfaces=['http://127.0.0.1:2025/a2a/7f6f2b12-8dc5-5ce2-a178-2db47369944a']
+[OK   ] historia: card con nombre y descripci├│n
+[OK   ] historia: consulta A2A -> state=completed, 277 chars, task_id=7a48994c-ab08-4860-afaf-66abd6067cca:01a1e18a-5c23-75e9-9a08-d451c789307e
+       respuesta: La Ilustraci├│n fue un movimiento cultural e intelectual europeo del siglo XVIII que, confiando en el poder de la raz├│n y la ciencia, busc├│ transformar las estru
+[OK   ] geografia: GET http://127.0.0.1:2026/ok -> HTTP 200
+[OK   ] geografia: card.url=http://127.0.0.1:2026/a2a/bed88ad6-7b48-5518-a206-cb2d85c69cda
+[OK   ] geografia: interfaces=['http://127.0.0.1:2026/a2a/bed88ad6-7b48-5518-a206-cb2d85c69cda']
+[OK   ] geografia: card con nombre y descripci├│n
+[OK   ] geografia: consulta A2A -> state=completed, 231 chars, task_id=40ae020c-8f0d-4611-ad32-b69be9585b42:01a1e18a-6722-753a-bb96-8decdf8af586
+       respuesta: Una placa tect├│nica es un gran fragmento r├¡gido de la litosfera terrestre que se desplaza lentamente sobre el manto superior (astenosfera), interactuando con ot
+
+Resultado: agentes OK (/ok + card + consulta A2A).

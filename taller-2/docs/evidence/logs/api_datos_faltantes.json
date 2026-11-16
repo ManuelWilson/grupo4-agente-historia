@@ -1,0 +1,15 @@
+{
+  "caso": "datos_faltantes",
+  "solicitud": "Háblame de la independencia",
+  "http": 200,
+  "route": "historia",
+  "agents": [
+    "historia"
+  ],
+  "task_ids": [
+    "04073356-998e-577f-ba45-a64ac0adf427:01a1e189-ce3b-7350-863e-62e787ac9601"
+  ],
+  "chars": 1434,
+  "reply": "¡Hola, colega! Con mucho gusto abordamos el tema, pero antes de lanzarnos a recorrer años, batallas y declaraciones, permíteme preguntarte: **¿a qué proceso de independencia te refieres exactamente?** \n\nLa historia está llena de grandes quiebres soberanos y el término puede aplicarse a procesos muy diversos:\n* Las **independencias hispanoamericanas** (1808-1826), donde un continente entero rompió con la Monarquía Española en medio de las guerras napoleónicas.\n* La **Independencia de las Trece Colonias** (1776), que dio nacimiento a los Estados Unidos y marcó un hito en el constitucionalismo moderno.\n* La **Independencia de Haití** (1804), única en su tipo por ser una revolución anticolonial y antiesclavista liderada por los propios esclavizados.\n* O procesos europeos o asiáticos de los siglos XIX y XX, por mencionar algunos.\n\nPara poder darte una perspectiva rigurosa —analizando las **causas profundas**, el **contexto** internacional, las **consecuencias** y diferenciando lo que documentan las fuentes de las interpretaciones historiográficas—, dime:\n1. **¿Qué región o proceso histórico te interesa?**\n2. **¿Con qué objetivo lo necesitas?** (por ejemplo: para preparar una clase, para un artículo, o simplemente por debate entre colegas).\n3. **¿A qué nivel educativo o público va dirigido?**\n\nEn cuanto me des esa pista, abro mis apuntes y armamos el relato con todo el rigor y contexto que merece. ¡Quedo a la espera!",
+  "request_id": "32cfd4508684"
+}

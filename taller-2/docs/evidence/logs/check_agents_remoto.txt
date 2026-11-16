@@ -1,0 +1,16 @@
+[OK   ] historia: GET https://grupo4-agente-historia-d810bfcccd22.herokuapp.com/ok -> HTTP 200
+[OK   ] historia: card.url=https://grupo4-agente-historia-d810bfcccd22.herokuapp.com/a2a/7f6f2b12-8dc5-5ce2-a178-2db47369944a
+[OK   ] historia: interfaces=['https://grupo4-agente-historia-d810bfcccd22.herokuapp.com/a2a/7f6f2b12-8dc5-5ce2-a178-2db47369944a']
+[OK   ] historia: card con nombre y descripci├│n
+[OK   ] historia: sin token -> HTTP 401 (esperado 401)
+[OK   ] historia: consulta A2A -> state=completed, 242 chars, task_id=a8d3efc5-6a45-4897-b72c-353bacffc559:01a1e4c2-35ba-75e0-9ce7-2723718b5d0b
+       respuesta: La Ilustraci├│n fue un movimiento cultural e intelectual europeo del siglo XVIII que, confiando en la raz├│n y la ciencia como motores del progreso, cuestion├│ el 
+[OK   ] geografia: GET https://grupo4-agente-geografia-df1b26d2ed18.herokuapp.com/ok -> HTTP 200
+[OK   ] geografia: card.url=https://grupo4-agente-geografia-df1b26d2ed18.herokuapp.com/a2a/bed88ad6-7b48-5518-a206-cb2d85c69cda
+[OK   ] geografia: interfaces=['https://grupo4-agente-geografia-df1b26d2ed18.herokuapp.com/a2a/bed88ad6-7b48-5518-a206-cb2d85c69cda']
+[OK   ] geografia: card con nombre y descripci├│n
+[OK   ] geografia: sin token -> HTTP 401 (esperado 401)
+[OK   ] geografia: consulta A2A -> state=completed, 201 chars, task_id=4fabe999-27cb-49f4-88f7-dadc0f12a28a:01a1e4c2-4453-7006-add3-1c431cc975a9
+       respuesta: Una placa tect├│nica es un gigantesco bloque r├¡gido de la litosfera que se desplaza lentamente sobre la astenosfera, interactuando con otras placas en sus bordes
+
+Resultado: agentes OK (/ok + card + consulta A2A).

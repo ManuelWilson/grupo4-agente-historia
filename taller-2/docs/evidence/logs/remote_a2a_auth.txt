@@ -1,0 +1,34 @@
+== REMOTE (Heroku) - verificacion A2A - 2026-11-16 10:49:54 local ==
+
+Agente: historia
+GET https://grupo4-agente-historia-d810bfcccd22.herokuapp.com/.well-known/agent-card.json?assistant_id=7f6f2b12-8dc5-5ce2-a178-2db47369944a
+  -> 200 OK
+  url: https://grupo4-agente-historia-d810bfcccd22.herokuapp.com/a2a/7f6f2b12-8dc5-5ce2-a178-2db47369944a
+  name: agente_profesor_historia
+  security: [{"bearer": []}]
+  securitySchemes: {"bearer": {"type": "http", "scheme": "bearer"}}
+POST https://grupo4-agente-historia-d810bfcccd22.herokuapp.com/a2a/7f6f2b12-8dc5-5ce2-a178-2db47369944a  (sin Authorization)
+  -> 401 Unauthorized
+  www-authenticate: Bearer
+  body: {"error":"unauthorized","detail":"Token A2A inválido o ausente."}
+POST https://grupo4-agente-historia-d810bfcccd22.herokuapp.com/a2a/7f6f2b12-8dc5-5ce2-a178-2db47369944a  (Authorization: Bearer <A2A_SHARED_TOKEN>)
+  -> 200 OK, sin error JSON-RPC
+  state: completed   task_id: 40a4c89b-5cc6-495e-b46d-178cdce3510f:01a1e49f-29ad-7149-9a32-06067a5d6281   respuesta_chars: 207
+  respuesta (recortada): Un delta fluvial es un depósito sedimentario con forma de abanico que se forma en la desembocadura de un río cuando este deposita más material del que las mareas y corrientes del mar o lago pueden ero
+
+Agente: geografia
+GET https://grupo4-agente-geografia-df1b26d2ed18.herokuapp.com/.well-known/agent-card.json?assistant_id=bed88ad6-7b48-5518-a206-cb2d85c69cda
+  -> 200 OK
+  url: https://grupo4-agente-geografia-df1b26d2ed18.herokuapp.com/a2a/bed88ad6-7b48-5518-a206-cb2d85c69cda
+  name: agente_profesor_geografia
+  security: [{"bearer": []}]
+  securitySchemes: {"bearer": {"type": "http", "scheme": "bearer"}}
+POST https://grupo4-agente-geografia-df1b26d2ed18.herokuapp.com/a2a/bed88ad6-7b48-5518-a206-cb2d85c69cda  (sin Authorization)
+  -> 401 Unauthorized
+  www-authenticate: Bearer
+  body: {"error":"unauthorized","detail":"Token A2A inválido o ausente."}
+POST https://grupo4-agente-geografia-df1b26d2ed18.herokuapp.com/a2a/bed88ad6-7b48-5518-a206-cb2d85c69cda  (Authorization: Bearer <A2A_SHARED_TOKEN>)
+  -> 200 OK, sin error JSON-RPC
+  state: completed   task_id: a73ba7dd-1c65-429b-a956-3d80f652a3e5:01a1e49f-3ccb-74c7-8495-c3f4b6692631   respuesta_chars: 213
+  respuesta (recortada): Un delta fluvial es un territorio sedimentario de forma triangular que se forma en la desembocadura de un río cuando este acumula más materiales de los que el mar o lago receptor es capaz de erosionar
+

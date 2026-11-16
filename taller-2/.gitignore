@@ -1,0 +1,71 @@
+# Secretos y credenciales
+.env
+.env.*
+!.env.example
+!**/.env.example
+secretos/
+*.pem
+*.key
+heroku_api_key.txt
+aws_app_accesskey.csv
+api_key_telegram_message.txt
+*.zip
+*.7z
+dist/
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+**/.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+dist/
+build/
+
+# LangGraph
+.langgraph_api/
+.langgraph/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+*.run.log
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Datos locales
+memoria/
+*.sqlite
+*.db
+
+# Repositorios anidados (no entregar metadatos de git)
+**/.git/
+
+# Node / frontend
+node_modules/
+
+# Caches de herramientas
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Artefactos internos de planificación y empaquetado
+verificacion-plan.md
+dist/
